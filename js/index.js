@@ -115,6 +115,8 @@ function updateProduct() {
         products[currentId].price = productPrice.value;
         products[currentId].category = productCategory.value;
         products[currentId].description = productDesc.value;
+        products[currentId].image= `images/${prductImage.files[0].name}`
+        
         addbtn.classList.remove('d-none');
         updatebtn.classList.add('d-none');
         localStorage.setItem('products', JSON.stringify(products));
